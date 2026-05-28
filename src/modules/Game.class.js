@@ -199,9 +199,12 @@ class Game {
    */
   restart() {
     this.score = 0;
-    this.status = 'idle';
+    this.status = 'playing';
 
     this.board = this.initialState.map((row) => [...row]);
+
+    this.addRandomNumbers();
+    this.addRandomNumbers();
   }
 
   addRandomNumbers() {

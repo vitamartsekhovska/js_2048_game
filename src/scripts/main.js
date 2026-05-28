@@ -63,9 +63,6 @@ gameButton.addEventListener('click', () => {
     gameButton.classList.add('restart');
   } else {
     game.restart();
-    gameButton.textContent = 'Start';
-    gameButton.classList.remove('restart');
-    gameButton.classList.add('start');
   }
 
   updateVisual();
